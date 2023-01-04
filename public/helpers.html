@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>Helpers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <!-- External CSS libraries -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/linericon/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+        <link rel="stylesheet" href="vendors/animate-css/animate.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900">
+
+    <!-- Custom Stylesheet -->
+    <link type="text/css" rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+
+<!-- Invoice 1 start -->
+<div class="invoice-1 invoice-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="invoice-inner clearfix">
+                    <div class="invoice-info clearfix" id="invoice_wrapper">
+                       
+                        <div class="invoice-top">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <div class="invoice-number mb-30">
+                                        <h2 class="name mb-10">XI Engineering Ltd</h2>
+                                        <p class="invo-addr-1">
+                                            Start Date: 01/01/2023 <br/>
+                                            End Date: 01/01/2023 <br/>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="invoice-number mb-30">
+                                        <div class="invoice-number-inner">
+                                            <p class="invo-addr-1">
+                                                Open Balance  <br/>
+                                                Receipts  <br/>
+                                                Payments <br/>
+                                                Close Balance <br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="invoice-number mb-30">
+                                        <div class="invoice-number-inner">
+                                            <p class="invo-addr-1">
+                                                23,434,344  <br/>
+                                                11,100,231  <br/>
+                                                234,999,566 <br/>
+                                                120,000,234<br/>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="invoice-center">
+                            <div class="table-responsive">
+                            
+                                <div class="row">
+                                    <div class="col-md-4">            
+                                            Open Balance
+                                    </div>
+                                    <div class="col-md-4">            
+                                        Start Date
+                                    </div>
+                                    <div class="col-md-4">            
+                                        End Date
+                                    </div>
+                                </div>
+                                <div class="row">
+                                       
+                                           
+                                            <div class="col-md-4">
+                                               
+                                                <div class="form-group">
+                                                    <input type="number" class="form-control" id="open-balance" placeholder="Amount">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input type="date" class="form-control date" id="start-date" name="date" placeholder="select">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <input type="date" class="form-control date" id="end-date" name="date" placeholder="select">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 text-right">
+                                                <div class="form-group">
+                                                    <button  id="open-submit-btn" class="btn open-submit-btn">A D D</button>
+                                                </div>
+                                            
+                                            </div>
+                                     
+                            
+                            </div>
+                            
+                            <div class="row">
+                                       
+                                          <div class="col-md-12"><h4>Add A Member</h4></div>
+                                <div class="col-md-4">
+                                   
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="first-name" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                   
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="second-name" placeholder="Second Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                   
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="email" placeholder="E-mail">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                   
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="password" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                   
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="employeeId" placeholder="Employee id">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                   
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="designation" placeholder="Designation">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                   
+                                    <div class="form-group">
+                                        <input type="number" class="form-control" id="priority" placeholder="Priority">
+                                    </div>
+                                </div>
+                               
+                               
+                             
+
+                                <div class="col-md-12 text-right">
+                                    <div class="form-group">
+                                        <button  id="submit-member-btn" class="btn submit-member-btn">Add Member</button>
+                                    </div>
+                                
+                                </div>
+                         
+                
+                </div>
+                        </div>
+                      
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Invoice 1 end -->
+
+<script src="js/helpers.js"></script>
+
+</body>
+</html>

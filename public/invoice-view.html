@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <title>View Invoice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+
+<!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900">
+
+<!-- Custom Stylesheet -->
+<link type="text/css" rel="stylesheet" href="css/mystyle.css">
+</head>
+<body>
+    <div class="invoice-3 invoice-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="invoice-inner">
+                        <div class="invoice-info" id="invoice_wrapper">
+                            <div class="invoice-headar">
+                                <div class="row">
+                                   
+                                    <div class="col-sm-2">
+                                        <!-- <div class="logo">
+                                            <img src="img/logo_big.png" alt="logo">
+                                        </div> -->
+                                        
+                                        <img src="img/logo_big.png" width="100px" height="110px" alt="logo">
+                                        
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="invoice">
+                                            <h1 class="text-start inv-header-1 mb-0">XI Engineering Ltd</h1>
+                                            P.O Box 55115 Dar es Salaam<br/>
+                                            +255 (0) 717 687 787<br/>
+                                             info@xiengineeringltd.com<br/>
+                                            www.xiengineeringltd.com
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="invoice">
+                                            TIN: 122-223-294<br/>
+                                            VRN: 1-2334-13Y<br/><br/>
+                                            <h4 class="inv-title-1">INVOICE NO: 202301/99</h4>
+                                            <h4 class="inv-title-1"  id="date">DATE: 202301/01</h4>
+                                            
+                                        </div>
+                                    </div>
+                                   
+                                   
+                                </div>
+                            </div>
+                            <div class="invoice-top">
+                                <div class="row">
+                                    <div class="col-sm-6 mb-30">
+                                        <div class="invoice-number">
+                                            <h4 class="inv-title-1">Invoice To</h4>
+                                            <p class="invo-addr-1 mb-0">
+                                               <span  id="toName"> </span>  <br/>
+                                               <span  id="address"> </span> <br/>
+                                               <span  id="contact"> </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 mb-30">
+                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <h4 class="inv-title-1">Order Summary</h4>
+                                    <!-- <div class="col-sm-6 mb-30">
+                                        <h4 class="inv-title-1">Date</h4>
+                                        <p class="inv-from-1 mb-0">Due Date: 21/09/2021</p>
+                                    </div>
+                                    <div class="col-sm-6 text-end mb-30">
+                                        <h4 class="inv-title-1">Payment Method</h4>
+                                        <p class="inv-from-1 mb-0">Credit Card</p>
+                                    </div> -->
+                                </div>
+                            </div>
+                           <div class="invoice-center">
+                            <div class="table-responsive">
+                                <table class="table mb-0 table-striped invoice-table">
+                                    <thead class="bg-active">
+                                    <tr class="tr">
+                                        <th>No.</th>
+                                        <th class="pl0 text-start">Item Description</th>
+                                        <th class="text-center">Price</th>
+                                        <th class="text-center">Quantity</th>
+                                        <th class="text-end">Amount</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="tableBody">
+
+                                    </tbody>
+                                    <tbody id="tableBodyy">
+                                
+                                
+                                    <tr class="tr2">
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-center">SubTotal</td>
+                                        <td class="text-end subTotal" id="subTotal">0.00</td>
+                                    </tr>
+                                    <tr class="tr2">
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-center">Tax (18%)</td>
+                                        <td class="text-end tax" id="tax">0.00</td>
+                                    </tr>
+                                    <tr class="tr2">
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="text-center f-w-600 active-color">Grand Total</td>
+                                        <td class="f-w-600 text-end active-color grand-total" id="grand-total">0.00</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                            <div class="invoice-bottom">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="important-note mb-30">
+                                            <h3 class="inv-title-1">Important Note</h3>
+                                            <ul class="important-notes-list-1">
+                                                <li>Once order done, money can't refund</li>
+                                                <li>Delivery might delay due to some external dependency</li>
+                                                <li>This is computer generated invoice and physical signature does not require.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-offsite">
+                                        <div class="text-start payment-info mb-30">
+                                            <h3 class="inv-title-1">Bank Details</h3>
+                                            <p class="mb-0 text-13">Account Name: XI ENGINEERING LIMITED <br/>
+                                                Account Number: 015C708935600
+                                            </p>
+                                            <br>
+                                            <p class="mb-0 text-13">Name: Eng. Isaya Exavery  <br/> <br/>
+                                                Signature: ____________________
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="mb-0 text-13"> * If you have any enquiries concerning this invoice, please 
+                                    contact  0717 687 787</p>
+                            </div>
+                        </div>
+                        <div class="invoice-btn-section clearfix d-print-none">
+                            <a href="javascript:window.print()" class="btn btn-lg btn-print">
+                                <i class="fa fa-print"></i> Print Invoice
+                            </a>
+                            <a href="javascript:window.print()" class="btn btn-lg btn-print">
+                                <i class="fa fa-edit"></i> Edit Invoice
+                            </a>
+                                                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Invoice 1 end -->
+<script src="js/invoice-view.js"></script>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jspdf.min.js"></script>
+<script src="assets/js/html2canvas.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
